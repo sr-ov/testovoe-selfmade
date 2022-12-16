@@ -1,0 +1,37 @@
+<div class="main__user user-info bdrs bgc">
+	<div class="user-info__top user-info-top">
+		<img src="./images/avatar.png" alt="Аватар пользователя">
+		<div>Давид Аракелян</div>
+		<div class="user-info-top__badge">ТОП</div>
+	</div>
+
+	<div class="user-info__md user-info-md">
+		<div class="user-info-md__title">
+			SELFMADE RESPECT (SR)
+			<a class="user-info-md__what" href="/">(Что это?)</a>
+		</div>
+
+		<ul class="user-info-md__list">
+			{{#each sr_list}}
+				<li class="user-info-md__item">
+					<a class="user-info-md__link" href="#" style="--bgc:{{color}}">
+						{{text}}
+					</a>
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+
+	<div class="user-info__btm user-info-btm">
+		<div class="user-info-btm__disk">Мой диск</div>
+
+		<div class="user-info-btm__stats disk-stats">
+			<div class="disk-stats__left">Осталось</div>
+			<div class="disk-stats__mb">40/100 (mb)</div>
+			<div class="disk-stats__range">
+				<span class="disk-stats__fill"></span>
+				Добавить место
+			</div>
+		</div>
+	</div>
+</div>

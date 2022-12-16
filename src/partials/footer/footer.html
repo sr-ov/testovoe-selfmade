@@ -1,0 +1,41 @@
+<footer class="footer">
+	<div class="container">
+		<div class="footer__top footer-top">
+			<a class="footer__logo logo" href="">
+				<img class="logo__img" src="./images/logo-footer.svg" alt="" aria-hidden="true">
+			</a>
+
+			<ul class="social__list">
+				{{#each social}}
+					<li class="social__item">
+						<a class="social__link" href="#">
+							<svg class="social__icon" height="12" width="15">
+								<use xlink:href="{{@root.svg}}#{{icon}}"></use>
+							</svg>
+						</a>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+
+		<ul class="footer__md footer-list">
+			{{#each footer_list}}
+				<li class="footer-list__item">
+					<a class="footer-list__link" href="/">
+						{{text}}
+					</a>
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+
+	<div class="footer__btm footer-btm">
+		<div class="container">
+			<div class="footer-btm__content">
+				<div class="footer-btm__copy">© SELFMADE.TEAM 2022</div>
+				<div class="footer-btm__id">ИНН 431207720494 / ОГРНИП 320508100324371</div>
+				<a class="footer-btm__policy" href="/">Политика конфиденциальности</a>
+			</div>
+		</div>
+		</div>
+</footer>

@@ -1,0 +1,96 @@
+{
+	"sidebar": [
+		{
+			"icon": "user",
+			"text": "Управление",
+			"active": true
+		},
+		{
+			"icon": "squares",
+			"text": "Портфолио"
+		},
+		{
+			"icon": "star",
+			"text": "Награды"
+		},
+		{
+			"icon": "heart",
+			"text": "Избранное"
+		},
+		{
+			"icon": "gear",
+			"text": "Аккаунт"
+		},
+		{
+			"icon": "chart",
+			"text": "Уровень"
+		},
+		{
+			"icon": "crown",
+			"text": "Премиум",
+			"premium": true
+		},
+		{
+			"icon": "chat",
+			"text": "Поддержка"
+		},
+		{
+			"icon": "exit",
+			"text": "Выйти"
+		}
+	],
+	"social": [
+		{
+			"icon": "teleg"
+		},
+		{
+			"icon": "insta"
+		},
+		{
+			"icon": "vk"
+		},
+		{
+			"icon": "fb"
+		}
+	],
+	"sr_list": [
+		{
+			"text": "Профиль",
+			"color": "#A5A6F6"
+		},
+		{
+			"text": "Портфолио",
+			"color": "#F178B6"
+		},
+		{
+			"text": "SR ФРЕШ",
+			"color": "#3AC39F"
+		},
+		{
+			"text": "SR ПРО",
+			"color": "#5D5FEF"
+		},
+		{
+			"text": "SR ТОП",
+			"color": "#EF5DA8"
+		}
+	],
+	"footer_list": [
+		{
+			"text": "Как работает сервис?"
+		},
+		{
+			"text": "Советы от SELFMADE"
+		},
+		{
+			"text": "Пользовательское соглашение"
+		},
+		{
+			"text": "Почему SELFMADE"
+		},
+		{
+			"text": "Помощь и поддержка"
+		}
+	],
+	"svg": "./icons/sprite.svg"
+}

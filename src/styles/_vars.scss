@@ -1,0 +1,21 @@
+$container_width: 1200;
+$container_padding: 15;
+$fz_base: 14;
+
+:root {
+	--c-prim: #2f2f2f;
+	--c-sec: #ffffff;
+	--c-bg: #f0f0f0;
+	--c-acc-prim: #5d5fef;
+	--c-acc-sec: #5556d3;
+	--c-acc-thr: #ef5da8;
+
+	--bd-rs: 15px;
+	--bd-line: 1px solid rgba(0 0 0 / 0.1);
+
+	--fz-prim: #{$fz_base}px;
+	--ff-prim: 'Gilroy';
+
+	--container-width: #{$container_width}px;
+	--container-padding: #{$container_padding}px;
+}

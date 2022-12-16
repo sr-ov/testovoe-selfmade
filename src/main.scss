@@ -1,0 +1,13 @@
+@use './styles/reset';
+@use './styles/vars';
+@use './styles/fonts';
+@use './styles/global';
+
+@use './partials/footer';
+@use './partials/header';
+@use './partials/sidebar';
+@use './partials/user-info';
+@use './partials/statistics';
+@use './partials/chart';
+
+// 575-320

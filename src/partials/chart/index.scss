@@ -1,0 +1,85 @@
+.chart {
+	padding: 28px 20px;
+	text-align: center;
+	// .chart__your-sr
+	&__your-sr {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 14px;
+	}
+	// .chart__chart-sr
+	&__chart-sr {
+		position: relative;
+	}
+	// .chart__tooltip
+	&__tooltip {
+		--bgc: #383838;
+
+		position: absolute;
+		left: 50%;
+		z-index: 11;
+		transform: translateX(-50%);
+		padding: 6px;
+		background-color: var(--bgc);
+		min-width: 90px;
+		color: var(--c-sec);
+		border-radius: 4px;
+		pointer-events: none;
+		transition: opacity 0.3s, top 0.3s;
+		opacity: 0;
+	}
+	// .chart__tooltip-text
+	&__tooltip-text {
+		position: relative;
+		display: inline-block;
+
+		&::after {
+			content: '';
+			background-color: var(--bgc);
+			height: 10px;
+			width: 10px;
+			display: inline-block;
+			position: absolute;
+			bottom: -16px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			clip-path: polygon(100% 0, 0 0, 50% 60%);
+		}
+	}
+	// .chart__num
+	&__num {
+		font-weight: 700;
+		margin-top: 18px;
+	}
+	// .chart__num-lg
+	&__num-lg {
+		color: var(--c-acc-prim);
+		font-size: 20px;
+		line-height: 24px;
+	}
+	// .chart__num-sm
+	&__num-sm {
+		color: #717171;
+		font-size: 13px;
+	}
+}
+
+.anim-circle {
+	transform: rotate(-90deg);
+	transform-origin: center;
+	transition: stroke-dashoffset 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	animation-duration: 3s;
+	animation-name: circle-fill;
+	animation-fill-mode: forwards;
+	pointer-events: none;
+}
+
+@keyframes circle-fill {
+	from {
+		stroke-dashoffset: var(--dashoffset-from);
+	}
+	to {
+		stroke-dashoffset: var(--dashoffset-to);
+	}
+}

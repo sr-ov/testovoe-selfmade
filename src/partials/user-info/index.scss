@@ -1,0 +1,151 @@
+.user-info {
+	// .user-info__top
+	&__top {
+	}
+	// .user-info__md
+	&__md {
+	}
+	// .user-info__btm
+	&__btm {
+	}
+}
+
+.user-info-top {
+	padding: 16px var(--py) 19px var(--py);
+	display: flex;
+	align-items: center;
+	gap: 22px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 106%;
+	border-bottom: var(--bd-line);
+	// .user-info-top__badge
+	&__badge {
+		display: inline-block;
+		margin-left: auto;
+		font-size: 10px;
+		line-height: 106%;
+		color: var(--c-sec);
+		padding: 4px 8px;
+		background-color: var(--c-acc-thr);
+		border-radius: 46.669px;
+	}
+}
+
+.user-info-md {
+	padding: 30px var(--py);
+	border-bottom: var(--bd-line);
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 23px;
+	// .user-info-md__title
+	&__title {
+		margin-bottom: 10px;
+	}
+	// .user-info-md__what
+	&__what {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		color: var(--c-acc-thr);
+	}
+	// .user-info-md__list
+	&__list {
+		display: flex;
+		gap: 6px;
+		flex-wrap: wrap;
+
+		@media (max-width: 576px) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media (max-width: 480px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	// .user-info-md__item
+	&__item {
+	}
+	// .user-info-md__link
+	&__link {
+		padding: 22px 5px 22px 10px;
+		min-width: 115px;
+		background-color: var(--c-sec);
+		border-radius: var(--bd-rs);
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 15px;
+		color: #868686;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		&::before {
+			content: '';
+			background-color: var(--bgc);
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+		}
+	}
+}
+
+.user-info-btm {
+	padding: 22px var(--py) 30px var(--py);
+	// .user-info-btm__disk
+	&__disk {
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 23px;
+		margin-bottom: 13px;
+	}
+	// .user-info-btm__stats
+	&__stats {
+	}
+}
+
+.disk-stats {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 14px;
+	// .disk-stats__left
+	&__left {
+		color: #868686;
+	}
+	// .disk-stats__mb
+	&__mb {
+	}
+	// .disk-stats__range
+	&__range {
+		background-color: #c7c8ff;
+		border-radius: 63px;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 16px;
+		color: var(--c-acc-prim);
+		text-align: end;
+		position: relative;
+		flex-grow: 1;
+		padding-right: 20px;
+
+		@media (max-width: 576px) {
+			flex-basis: 100%;
+		}
+	}
+	// .disk-stats__fill
+	&__fill {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-color: var(--c-acc-prim);
+		width: 70%;
+		height: 100%;
+		border-radius: inherit;
+	}
+}

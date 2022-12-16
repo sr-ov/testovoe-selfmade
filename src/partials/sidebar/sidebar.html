@@ -1,0 +1,23 @@
+<aside class="main__sidebar sidebar" id="sidebar">
+	<div class="sidebar__wrapper">
+		<ul class="sidebar__list bdrs bgc">
+			{{#each sidebar}}
+				<li class="sidebar__item">
+					<a
+						class="
+							sidebar__link bdrs
+							{{#if active}} active {{/if}}
+							{{#if premium}} premium {{/if}}
+						"
+						href="#"
+					>
+						<svg class="sidebar__icon" width="20" height="20">
+							<use xlink:href="{{@root.svg}}#{{icon}}"></use>
+						</svg>
+						{{text}}
+					</a>
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+</aside>
